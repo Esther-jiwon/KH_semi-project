@@ -48,11 +48,7 @@ public class DAO {
 				pstmt.setString(10, movies.get(i).getDirectorNm());
 				pstmt.setString(11, movies.get(i).getCompanyCd());
 				pstmt.setString(12, movies.get(i).getCompanyNm());
-
-				
-				System.out.println("업뎃 실패");
 				result = pstmt.executeUpdate();
-				System.out.println("업뎃 성공");
 				System.out.println(i+"추가성공");
 			}
 
