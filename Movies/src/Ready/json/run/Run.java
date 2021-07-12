@@ -23,6 +23,7 @@ public class Run {
 		try{
 			
 			// for문으로 j페이지 * 100행 불러오기
+			// 전체목록 : 조금 더 초과된 숫자로 불러오기 
 			for(int j = 1; j < 824; j++ ) {
 				URL url = new URL(" http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key="
 	    				+ key + "&curPage=" +j+"&itemPerPage=100");
